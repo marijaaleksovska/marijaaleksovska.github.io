@@ -1,0 +1,457 @@
+html{
+  scroll-behavior: smooth;
+}
+
+#dp-manu :hover{
+background-color: rgb(58, 97, 97);
+
+}
+
+
+.jumbotron{
+    
+    background: url("./images/slide01.png") no-repeat; 
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+  background-size:auto;
+  color: wheat;
+  margin-top: 20px;
+}
+.lead{
+    width: 40%;
+}
+#info-btn{
+    
+    background-color: rgba(245, 222, 179, 0.637);
+    font-size:1.5vw;
+
+}
+#info-btn:hover{
+    background-color: rgba(245, 222, 179, 0.815);
+}
+
+blockquote{
+   
+    font-size:2.5vw;
+    line-height: 1.5;
+    text-align: center;
+    border-top: 2px solid darkred;
+    border-bottom: 2px solid darkred;
+   color: rgb(70, 12, 12);
+}
+  blockquote p.quote-author {
+    font-size:1.5vw;
+    color: gray;
+  }
+ 
+
+ #navpillsdiv{
+     width: 90%;
+     margin-top: 30px;
+     margin-bottom: 30px;
+ }
+ #v-pills-tab a{
+    margin-top: 20px;
+ }
+ #pills-1-tab,  #pills-2-tab, #pills-3-tab, #pills-4-tab{
+     font-weight: bold;
+     color:rgb(211, 1, 1);
+     text-align: left;
+ }
+ #pills-1,#pills-2,#pills-3, #pills-4{
+     padding: 16px;
+ }
+ 
+ .nav * {
+    
+    transition: all .35s ease;
+  }
+  
+  .nav li {
+    display: inline-block;
+    list-style: outside none none;
+    
+  }
+  
+  .nav a { 
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .nav a::before,
+  .nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  
+  .nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid red;
+    border-right: 3px solid red;
+    transform: translate(-100%, 50%);
+  }
+  
+  .nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid red;
+    border-left: 3px solid red;
+    transform: translate(100%, -50%);
+  }
+  
+  .nav a:hover:before,
+  .nav a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+  .nav a:hover {
+    color:red;
+  }
+.tittle{
+    color: darkgreen;
+    
+}
+
+
+/* The footer is fixed to the bottom of the page */
+ 
+footer{
+	
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+  header { padding-top:40px; }
+  
+}
+
+ 
+ 
+.footer-distributed{
+	background-color: darkslategray;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 1.3vw;
+	padding: 35px 35px 40px 35px;
+	
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+/* Footer left */
+ 
+.footer-distributed .footer-left{
+	width: 25%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 1.5vw ;
+	margin: 0;
+}
+ 
+/* The company logo */
+ 
+.footer-distributed .footer-left img{
+	width: 10%;
+}
+
+/* Footer links */
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+/* Footer Center */
+ 
+.footer-distributed .footer-center{
+	width: 30%;
+}
+ 
+ 
+.footer-distributed .footer-center i{
+	
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+ 
+ 
+/* Footer Right */
+ 
+.footer-distributed .footer-right{
+	width: 40%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ .footer-links a:hover{
+     color: yellow;
+ }
+
+ 
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+ 
+ 
+@media (max-width: 880px) {
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+ 
+}
+
+#banner{
+  background: url("./images/banner1.jpg") no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  background-size:cover;
+  color: white;
+  margin-top: 50px;
+  width: 100%;
+padding: 50px;
+text-align: center;
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+.left {
+  width: 50%;
+  border-right: 2px solid darkgreen;
+}
+
+.middle {
+  width: 50%;
+  padding-bottom: 20px;
+  
+  padding-left: 30px;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left1{
+  width: 42%;
+  border-right: 2px solid darkgreen;
+}
+
+.middle1 {
+  width: 58%;
+  padding-bottom: 20px;
+  
+  padding-left: 30px;
+
+}
+
+.left2 {
+  width: 33.33%;
+  padding: 10px;
+}
+
+.middle2 {
+  width: 33.33%;
+  padding: 10px;
+
+}
+
+.left3{
+  width: 22%;
+ 
+}
+
+.middle31 {
+  width: 22%;
+  padding: 10px;
+  
+
+}
+.middle32 {
+  width: 22%;
+  padding: 10px;
+
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    border: none;
+  }
+  .img{
+    width: 60%;
+  }
+}
+.arrow {
+  border: solid darkgreen;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  vertical-align: middle;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.card{
+  border: 2px solid red;
+  text-align: center;
+  
+}
+.card-title{
+  font-weight: bold;
+}
+td:nth-child(3),
+th:nth-child(3){
+  background: yellow;
+  font-weight: bold;
+}
+td:nth-child(2),
+th:nth-child(2){
+  text-align: center;
+}
+td:nth-child(3),
+th:nth-child(3){
+  text-align: center;
+}
+td:nth-child(4),
+th:nth-child(4){
+  text-align: center;
+}
+td:nth-child(5),
+th:nth-child(5){
+  text-align: center;
+}
+td:nth-child(6),
+th:nth-child(6){
+  text-align: center;
+}
+td:nth-child(7),
+th:nth-child(7){
+  text-align: center;
+}
+td:nth-child(8),
+th:nth-child(8){
+  text-align: center;
+}
+#telBtn{
+  text-align: center;
+  font-weight: bold;
+  color: rgb(224, 224, 1);
+  border: 2px solid yellow;
+  border-radius: 10px;
+  padding: 5px;
+}
+#telBtn:hover{
+  color: yellow;
+  
+}
+.tittle1{
+  background-color: rgba(3, 134, 3, 0.712);
+  color: white;
+}
+#modalTable{
+ border: 2px solid red;
+  text-align: center; 
+  margin:0 auto; 
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: white;
+  font-size: 20px;
+  color: red;
+}
+#modalTable:hover{
+  background-color: wheat;
+}
