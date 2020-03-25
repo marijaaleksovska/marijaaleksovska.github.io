@@ -452,6 +452,6 @@ th:nth-child(8){
   background-color: wheat;
 }
 .chart {
-  width: 100%; 
-  min-height: 150px;
+ height: 100px;
+ display: block;
 }
