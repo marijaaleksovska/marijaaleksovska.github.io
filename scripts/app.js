@@ -110,6 +110,9 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/countries',{
     var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
 
     chart.draw(data1, options);
+    $(window).resize(function(){
+        drawRegionsMap();
+      });
      }
     
     
