@@ -69,7 +69,8 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/overview',{
     console.log(error)
 });
 
-axios.get('https://covid-ca.azurewebsites.net/api/covid/countries',{
+var mapDraw=function (){
+    axios.get('https://covid-ca.azurewebsites.net/api/covid/countries',{
     headers:{
         'Content-Type': 'application/json',
         'Accept': 'application/json'
@@ -117,9 +118,10 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/countries',{
 }).catch(error=>{
     console.log(error)
 });
-
+}
+mapDraw();
 $(window).resize(function(){
-    google.charts.setOnLoadCallback(drawRegionsMap);
     
+    mapDraw();
   });
   
