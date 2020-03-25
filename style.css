@@ -121,8 +121,6 @@ blockquote{
     
 }
 
-
-/* The footer is fixed to the bottom of the page */
  
 footer{
 	
@@ -154,7 +152,7 @@ footer{
 	vertical-align: top;
 }
  
-/* Footer left */
+
  
 .footer-distributed .footer-left{
 	width: 25%;
@@ -165,14 +163,13 @@ footer{
 	font: normal 1.5vw ;
 	margin: 0;
 }
- 
-/* The company logo */
+
  
 .footer-distributed .footer-left img{
 	width: 10%;
 }
 
-/* Footer links */
+
  
 .footer-distributed .footer-links{
 	color:  #ffffff;
@@ -264,8 +261,7 @@ footer{
  }
 
  
-/* Here is the code for Responsive Footer */
-/* You can remove below code if you don't want Footer to be responsive */
+
  
  
 @media (max-width: 880px) {
@@ -454,4 +450,9 @@ th:nth-child(8){
 }
 #modalTable:hover{
   background-color: wheat;
+}
+
+.chart {
+  width: 100%; 
+  min-height: 450px;
 }
