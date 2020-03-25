@@ -119,7 +119,7 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/countries',{
 });
 
 $(window).resize(function(){
-    drawRegionsMap();
+    google.charts.setOnLoadCallback(drawRegionsMap);
     
   });
   
