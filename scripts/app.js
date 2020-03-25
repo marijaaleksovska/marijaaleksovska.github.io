@@ -105,6 +105,7 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/countries',{
         
             datalessRegionColor: '#C5E8B7',
             defaultColor: '#C5E8B7',
+            explorer: {}
           };
 
     var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
