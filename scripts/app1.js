@@ -30,7 +30,7 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/countries',{
     console.log(error);
 });
 
-axios.get('https://covid-ca.azurewebsites.net/api/covid/history',{
+axios.get('https://covid-ca.azurewebsites.net/api/covid/v2/history/',{
     headers:{
         'Content-Type': 'application/json',
         'Accept': 'application/json'
