@@ -79,13 +79,7 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/countries',{
     let data =JSON.parse(response.data);
     console.log(data);
     google.charts.load('current', {
-        'packages':['geochart'],'mapsApiKey': 'AIzaSyCZ6arsk9pY6-cweBJ8VkjAoDsbC-0Qqvg',
-        'navigation': {
-            'initialLat': '35.04409',
-            'initialLng': '-90.246213',
-           'initialZoom': '4',
-            'minZoom':' 4'
-        }
+        'packages':['geochart'],'mapsApiKey': 'AIzaSyCZ6arsk9pY6-cweBJ8VkjAoDsbC-0Qqvg'
       });
       google.charts.setOnLoadCallback(drawRegionsMap);
      function drawRegionsMap(){
@@ -111,7 +105,13 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/countries',{
         
             datalessRegionColor: '#C5E8B7',
             defaultColor: '#C5E8B7',
-            explorer: {}
+            explorer: {},
+            navigation: {
+                initialLat: 35.04409,
+                initialLng: -90.246213,
+                initialZoom: 4,
+                minZoom: 4
+            }
           };
 
     var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
