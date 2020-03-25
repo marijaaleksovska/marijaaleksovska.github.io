@@ -117,3 +117,9 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/countries',{
 }).catch(error=>{
     console.log(error)
 });
+
+$(window).resize(function(){
+    drawRegionsMap();
+    
+  });
+  
