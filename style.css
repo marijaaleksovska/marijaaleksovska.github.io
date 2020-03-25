@@ -453,5 +453,5 @@ th:nth-child(8){
 }
 .chart {
   width: 100%; 
-  min-height: 450px;
+  min-height: 150px;
 }
