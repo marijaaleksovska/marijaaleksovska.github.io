@@ -451,7 +451,3 @@ th:nth-child(8){
 #modalTable:hover{
   background-color: wheat;
 }
-.chart {
- height: 100px;
- display: block;
-}
