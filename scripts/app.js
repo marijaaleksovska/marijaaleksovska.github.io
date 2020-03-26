@@ -106,8 +106,8 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/countries',{
            
             colorAxis: {colors: ['#C5E8B7','#57C84D','#2EB62C','#00853f','yellow', 'orange', '#e31b23']},
         
-            datalessRegionColor: 'pink',
-            defaultColor: 'pink',
+            datalessRegionColor: '#C5E8B7',
+            defaultColor: '#C5E8B7',
             explorer: {},
             navigation: {
                 initialLat: 35.04409,
