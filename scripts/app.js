@@ -100,6 +100,10 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/countries',{
             if(data[i].country=="UK"){
                 data1.addRow(['United Kingdom',data[i].cases]);
             }
+            if(data[i].country=="Iran, Islamic Republic of"){
+                data1.addRow(['Iran',data[i].cases]);
+            }
+            
             data1.addRow([data[i].country,data[i].cases])
         }
         var options = {
