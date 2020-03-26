@@ -9,7 +9,7 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/countries',{
     console.log(data);
     let tb=document.getElementById("tbody");
     for(let i=0;i<data.length;i++){
-        if(data[i].country=="North Macedonia"){
+        if(data[i].country=="Macedonia, the former Yugoslav Republic of"){
             var mkd=data[i];
             console.log(mkd);
 
