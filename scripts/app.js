@@ -103,6 +103,7 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/countries',{
             if(data[i].country=="Iran, Islamic Republic of"){
                 data1.addRow(['Iran',data[i].cases]);
             }
+
             data1.addRow([data[i].country,data[i].cases])
         }
         var options = {
@@ -111,7 +112,13 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/countries',{
         
             datalessRegionColor: '#C5E8B7',
             defaultColor: '#C5E8B7',
-            explorer: {}
+            explorer: {},
+            navigation: {
+                initialLat: 35.04409,
+                initialLng: -90.246213,
+                initialZoom: 4,
+                minZoom: 4
+            }
           };
 
     var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
