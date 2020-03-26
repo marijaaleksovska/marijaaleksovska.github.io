@@ -98,7 +98,7 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/countries',{
                 data1.addRow(['Macedonia',data[i].cases]);
             }
             if(data[i].country=="UK"){
-                data1.addRow(['United Kingdom',data[i].cases]);
+                data1.addRow(['United Kingdom of Great Britain and Northern Ireland',data[i].cases]);
             }
             data1.addRow([data[i].country,data[i].cases])
         }
