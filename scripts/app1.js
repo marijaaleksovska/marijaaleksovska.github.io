@@ -41,7 +41,7 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/history',{
     console.log(data);
     let mkdData;
     for(let i=0;i<data.length;i++){
-        if(data[i].country=="north macedonia"){
+        if(data[i].country=="Macedonia, the former Yugoslav Republic of"){
             mkdData=data[i];
         }
     }
