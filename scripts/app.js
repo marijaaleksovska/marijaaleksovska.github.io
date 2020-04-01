@@ -94,7 +94,7 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/countries',{
             if(data[i].country=="Czechia"){
                 data1.addRow(['Czech Republic',data[i].cases]);
             }
-            if(data[i].country=="Macedonia, the former Yugoslav Republic of"){
+            if(data[i].country=="North Macedonia"){
                 data1.addRow(['Macedonia',data[i].cases]);
             }
             if(data[i].country=="UK"){
