@@ -9,7 +9,9 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/countries',{
     console.log(data);
     let tb=document.getElementById("tbody");
     for(let i=0;i<data.length;i++){
-        if(data[i].country=="Macedonia"){
+
+        if(data[i].countryInfo.iso2=="MK"){
+
             var mkd=data[i];
             console.log(mkd);
 
@@ -41,7 +43,7 @@ axios.get('https://covid-ca.azurewebsites.net/api/covid/v2/history/',{
     console.log(data);
     let mkdData;
     for(let i=0;i<data.length;i++){
-        if(data[i].country=="north macedonia"){
+        if(data[i].country=="Macedonia"){
             mkdData=data[i];
         }
     }
